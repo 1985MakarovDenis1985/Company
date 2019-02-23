@@ -44,122 +44,19 @@ arrArrows.map((el)=>{
             current = current-1;
             console.log("current "+current);
             if (current == -1){
-                // current = arrSlider.length-1
+                current = arrSlider.length-1
             }
-            // change()
-
+            createCl.change(current, arrArrows, arrSlider)
         }
+
         if (el.id == "arrowR"){
             current = current+1
             console.log("current "+current)
             if (current > arrSlider.length-1){
-                // current = 0
+                current = 0
             }
-            // change()
-
+            createCl.change(current, arrArrows, arrSlider)
         }
-        console.log(current)
     })
-    change()
 });
 
-
-function change(){
-    arrArrows.map((el)=>{
-        el.addEventListener("click", (e)=>{
-            // if (current == 0){
-            //
-            // }
-            if (current >=2 && current < arrSlider.length-2){
-                remove.removeCl(arrSlider)
-                createCl.createClasses(arrSlider,current)
-            }
-            if (current ==1){
-                remove.removeCl(arrSlider)
-                createLeftPosition(arrSlider,current)
-            }
-            if (current ==0){
-                remove.removeCl(arrSlider)
-                createLeftLeftPosition(arrSlider,current)
-            }
-            if (arrSlider.length>5 && current == -1){
-                remove.removeCl(arrSlider)
-                createLastLeftPosition(arrSlider,current)
-            }
-            if (arrSlider.length>5 && current == -2){
-                remove.removeCl(arrSlider)
-                createPreLastLeftPosition(arrSlider,current)
-            }
-            if (arrSlider.length>5 && current == arrSlider.length-1){
-                remove.removeCl(arrSlider)
-                // createPreLastLeftPosition(arrSlider,current)
-            }
-        })
-    });
-}
-
-
-function createLeftPosition(arrSlider,current){
-    arrSlider[current-1].classList.add("slide_l");
-    arrSlider[current+1].classList.add("slide_r");
-
-    arrSlider[current].classList.add("centre_slide");
-
-    arrSlider[current+2].classList.add("slide_rr");
-    arrSlider[arrSlider.length-1].classList.add("slide_ll");
-}
-
-function createLeftLeftPosition(arrSlider,current){
-    arrSlider[arrSlider.length-1].classList.add("slide_l");
-    arrSlider[current+1].classList.add("slide_r");
-
-    arrSlider[current].classList.add("centre_slide");
-
-    arrSlider[current+2].classList.add("slide_rr");
-    arrSlider[arrSlider.length-2].classList.add("slide_ll");
-}
-function createLastLeftPosition(arrSlider,current){
-    arrSlider[arrSlider.length-2].classList.add("slide_l");
-    arrSlider[current+1].classList.add("slide_r");
-
-    arrSlider[arrSlider.length-1].classList.add("centre_slide");
-
-    arrSlider[current+2].classList.add("slide_rr");
-    arrSlider[arrSlider.length-3].classList.add("slide_ll");
-}
-function createPreLastLeftPosition(arrSlider,current){
-    arrSlider[arrSlider.length-2].classList.add("slide_l");
-    arrSlider[0].classList.add("slide_r");
-
-    arrSlider[arrSlider.length-1].classList.add("centre_slide");
-
-    arrSlider[1].classList.add("slide_rr");
-    arrSlider[arrSlider.length-3].classList.add("slide_ll");
-}
-
-
-
-
-//
-// function first(){
-//     arrSlider[current].classList.add("slide_show");
-//     arrSlider[current-1].classList.add("slide_l");
-//     arrSlider[arrSlider.length-1].classList.add("slide_r");
-// }
-//
-// function centreSlideShow(){
-//     arrSlider[current].classList.add("slide_show");
-//     arrSlider[current+1].classList.add("slide_r");
-//     arrSlider[current-1].classList.add("slide_l");
-// }
-//
-// function third(){
-//     arrSlider[current-1].classList.add("slide_r");
-//     arrSlider[arrSlider.length-1].classList.add("slide_l");
-//     arrSlider[0].classList.add("slide_show");
-// }
-
-
-console.log(current)
-
-// console.log(blocks[blocks.length-1])
