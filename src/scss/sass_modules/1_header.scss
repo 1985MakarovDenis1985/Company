@@ -1,0 +1,86 @@
+
+.header{
+  margin: auto;
+  max-width: 100%;
+  height: 1080px;
+  background-image: url(../img/coffee-3.png);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  @media screen and (max-width:1440px){
+  height: 825px;
+  }
+  @media screen and (max-width:768px){
+    height: 625px;
+  }
+  @media screen and (max-width:425px){
+    height: 325px;
+  }
+}
+
+.heder_wrap{
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  position: relative;
+}
+
+.header_nav{
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  bottom: 0;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  @media screen and (max-width:425px){
+    height: 50px;
+  }
+}
+
+.title_text{
+  font-family: 'Montserrat-Medium';
+  color: #fff;
+  text-align: center;
+  line-height: 700px;
+  font-size: 33px;
+
+  @media screen and (max-width:768px){
+    line-height: 550px;
+  }
+  @media screen and (max-width:425px){
+    line-height: 300px;
+  }
+}
+
+.hav_dlock{
+  width: 24%;
+  height: 80%;
+  background: lemonchiffon;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Montserrat-Medium';
+  font-size: 1.3rem;
+  cursor: pointer;
+  border: 2px solid transparent;
+  box-sizing: border-box;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  &:hover{
+    border: 2px solid red;
+  }
+
+  @media screen and (max-width:600px){
+    font-size: 0.8rem;
+  }
+  @media screen and (max-width:425px){
+    font-size: 0.7rem;
+  }
+}

@@ -1,0 +1,86 @@
+.container_AboutUs{
+  box-sizing: border-box;
+  max-width: 1980px;
+  height: 900px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+
+  @media screen and (max-width:1440px) {
+    height: 500px;
+  }
+  @media screen and (max-width:768px) {
+    display: none
+  }
+
+}
+
+.title_staff{
+  margin-top: 60px;
+  text-align: center;
+  font-family: 'Montserrat-Medium';
+
+  @media screen and (max-width:768px) {
+    margin-top: 35px;
+  }
+}
+
+.blocks_about_us{
+  box-sizing: border-box;
+  width: 23%;
+  height: 80%;
+  border: 1px solid black;
+  position: relative;
+  background-image: url(../img/coffee-3.png);
+  background-size: cover;
+}
+
+.blocks_about_us_description{
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 40%;
+  border: 1px solid black;
+  background: rgba(0,0,0,0.2);
+  font-family: 'Montserrat-Medium';
+}
+
+
+.container_AboutUs_mobile{
+  display: none;
+  box-sizing: border-box;
+  border: 1px solid black;
+  height: 600px;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: 'Montserrat-Medium';
+
+  @media screen and (max-width:768px) {
+    display: flex;
+    height: 800px;
+  }
+}
+
+.blocks_about_us_mobile{
+  width: 100%;
+  height: 23%;
+  border: 1px solid black;
+  box-sizing: border-box;
+  background-image: url(../img/coffee-3.png);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+}
+
+.blocks_about_us_description_mobile{
+  width: 40%;
+  height: 100%;
+  background: rgba(0,0,0,0.3);
+  float: left;
+}
