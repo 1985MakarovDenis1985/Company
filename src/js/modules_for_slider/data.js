@@ -35,57 +35,7 @@ let data_blocks = [
     }
 
 
-    ,{
-        "title":"bla-bla",
-        "descr":"bla-bla-bla-bla",
-        "data":"5"
-    },{
-        "title":"bla-bla",
-        "descr":"bla-bla-bla-bla",
-        "data":"5"
-    },{
-        "title":"bla-bla",
-        "descr":"bla-bla-bla-bla",
-        "data":"5"
-    },{
-        "title":"bla-bla",
-        "descr":"bla-bla-bla-bla",
-        "data":"5"
-    },{
-        "title":"bla-bla",
-        "descr":"bla-bla-bla-bla",
-        "data":"5"
-    },{
-        "title":"bla-bla",
-        "descr":"bla-bla-bla-bla",
-        "data":"5"
-    }
 
-    ,{
-        "title":"bla-bla",
-        "descr":"bla-bla-bla-bla",
-        "data":"5"
-    },{
-        "title":"bla-bla",
-        "descr":"bla-bla-bla-bla",
-        "data":"5"
-    },{
-        "title":"bla-bla",
-        "descr":"bla-bla-bla-bla",
-        "data":"5"
-    },{
-        "title":"bla-bla",
-        "descr":"bla-bla-bla-bla",
-        "data":"5"
-    },{
-        "title":"bla-bla",
-        "descr":"bla-bla-bla-bla",
-        "data":"5"
-    },{
-        "title":"bla-bla",
-        "descr":"bla-bla-bla-bla",
-        "data":"5"
-    }
 
 ]
 

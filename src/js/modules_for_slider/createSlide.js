@@ -1,40 +1,8 @@
-import {RemoveClass} from "./removeClass";
-let remove= new RemoveClass();
+
 //
 //
 export class CreateClasses {
 
-
-
-
-
-    change(current, arrArrows, arrSlider){
-        arrArrows.map((el)=>{
-            el.addEventListener("click", (e)=>{
-
-                if (current >=2 && current < arrSlider.length-2){
-                    remove.removeCl(arrSlider)
-                    this.createClasses(arrSlider,current)
-                }
-                if (current ==1){
-                    remove.removeCl(arrSlider)
-                    this.createLeftPosition(arrSlider,current)
-                }
-                if (current ==0){
-                    remove.removeCl(arrSlider)
-                    this.createLeftLeftPosition(arrSlider,current)
-                }
-                if (arrSlider.length>5 && current == arrSlider.length-1){
-                    remove.removeCl(arrSlider)
-                    this.createLastLeftPosition(arrSlider,current)
-                }
-                if (arrSlider.length>5 && current == arrSlider.length-2){
-                    remove.removeCl(arrSlider)
-                    this.createPreLastLeftPosition(arrSlider,current)
-                }
-            })
-        });
-    }
 
     createClasses(arrSlider,current) {
         arrSlider[current-1].classList.add("slide_l");
