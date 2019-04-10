@@ -134,3 +134,5 @@ pagClick();
 pagActive();
 console.log(current);
 console.log(arrPag);
+
+
