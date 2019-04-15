@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dc683cef-5478-46e6-a86e-0712c9426c9a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/js/sider.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/sider.js" afterDir="false" />
-    </list>
+    <list default="true" id="dc683cef-5478-46e6-a86e-0712c9426c9a" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -28,7 +26,7 @@
         <entry file="file://$PROJECT_DIR$/src/js/sider.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="317">
-              <caret line="138" lean-forward="true" selection-start-line="138" selection-end-line="138" />
+              <caret line="138" selection-start-line="138" selection-end-line="138" />
             </state>
           </provider>
         </entry>
@@ -179,16 +177,15 @@
       <workItem from="1550491022385" duration="46636000" />
       <workItem from="1550925081242" duration="30000" />
       <workItem from="1550925186336" duration="6646000" />
-      <workItem from="1554904772910" duration="101000" />
+      <workItem from="1554904772910" duration="256000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="90755000" />
+    <option name="totallyTimeSpent" value="90910000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="801" height="816" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49817517" visible="true" weight="0.24102564" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -444,7 +441,7 @@
     <entry file="file://$PROJECT_DIR$/src/js/sider.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="317">
-          <caret line="138" lean-forward="true" selection-start-line="138" selection-end-line="138" />
+          <caret line="138" selection-start-line="138" selection-end-line="138" />
         </state>
       </provider>
     </entry>

@@ -19,16 +19,26 @@ let current = Math.ceil(blocks.length/2);
 let main_container_our_works = document.getElementById("main_container_our_works")
 
 for (let i=0; i<blocks.length; i++){
-    let sliderItem = build.createNewElement("div", "sliderItem", i, [{"name":"id", "value":i}]);
-    main_container_our_works.appendChild(sliderItem)
+    let sliderItem = build.createNewElement("div", "sliderItem", "", [{"name":"id", "value":i}]);
+    main_container_our_works.appendChild(sliderItem);
+
 }
+
 
 let arrSlider = document.getElementsByClassName("sliderItem")
 arrSlider = Array.from(arrSlider);
 for (let i=0; i<blocks.length; i++){
+    let bgSlide = build.createNewElement("div", "bgSlide", "");
+    arrSlider[i].appendChild(bgSlide)
     arrSlider[i].classList.add("sl"+i);
 }
 createCl.createClasses(arrSlider,current,blocks);
+
+let bgSl = document.getElementsByClassName("bgSlide");
+for (let i = 0; i<bgSl.length; i++) {
+    bgSl[i].classList.add("bgSl"+i)
+}
+
 
 // ARROWS
 let arrArrows = document.getElementsByClassName("arrows");
@@ -60,7 +70,6 @@ arrArrows.map((el)=>{
     change(arrArrows)
 });
 // ARROWS
-
 //// Slick sliders
 function change(arrArrows){
     arrArrows.map((el)=>{
@@ -92,13 +101,12 @@ function change(arrArrows){
 
 //// Pagination
 let pagBlock = document.getElementById("pagination_block");
-
 for (let i=0; i<blocks.length; i++){
-    let pag = build.createNewElement("div", "pag", i, [{"name":"data-set", "value":i}])
+    let pag = build.createNewElement("div", "pag", "", [{"name":"data-set", "value":i}]);
     pagBlock.appendChild(pag)
 }
 
-let arrPag = Array.from(document.getElementsByClassName("pag"))
+let arrPag = Array.from(document.getElementsByClassName("pag"));
 
 ////=>
 
@@ -136,3 +144,25 @@ console.log(current);
 console.log(arrPag);
 
 
+
+// let x = document.getElementById("button_confirm");
+// x.addEventListener("click", (e)=>{
+//     e.preventDefault();
+//     let z = document.getElementById("title_text");
+//     z.style.display = "flex"
+//
+//     let c  = document.getElementById("header_nav");
+//     c.style.display = "flex"
+//
+//     let y = document.getElementById("confirm")
+//     y.style.display = "none"
+//
+//     let input = document.getElementById("input_confirm").value;
+//
+//     let greetting = document.getElementById("greetting")
+//     greetting.innerHTML = "Hello "+input+"</br>"+" We are very happy to see you on our company";
+//     greetting.style.animationName = "greetting"
+//     console.log(greetting)
+// })
+//
+// console.log(x)
