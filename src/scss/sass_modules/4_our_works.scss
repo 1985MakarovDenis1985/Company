@@ -24,6 +24,9 @@
 
 .container_our_works{
   position: relative;
+  @media screen and(max-width:1440px) {
+    margin-top: 70px;
+  }
 
   //@media screen and (max-width: 425px){
   //  height: 300px;
@@ -43,26 +46,6 @@
       font-size: 25px;
     }
 }
-
-//
-//.sl0{
-//  background-image: url(../img/surface_desktop.jpg);
-//}
-//.sl1{
-//  background-image: url(../img/food.jpg);
-//}
-//.sl2{
-//  background-image: url(../img/auction.jpg);
-//}
-//.sl3{
-//  background-image: url(../img/Sportshold.jpg);
-//}
-//.sl4{
-//  background-image: url(../img/mobile.png);
-//}
-//.sl5{
-//  background-image: url(../img/last.jpg);
-//}
 
 
 

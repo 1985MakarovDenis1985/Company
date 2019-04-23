@@ -49,7 +49,7 @@ arrArrows.map((el)=>{
         if (el.id == "arrowL"){
             current = current-1;
             pagActive()
-            console.log("current "+current);
+            // console.log("current "+current);
             if (current == -1){
                 current = arrSlider.length-1
                 pagActive()
@@ -61,11 +61,11 @@ arrArrows.map((el)=>{
             console.log("current "+current)
             if (current > arrSlider.length-1){
                 current = 0;
-                console.log("curE "+current)
+                // console.log("curE "+current)
                 pagActive()
             }
         }
-        console.log(current)
+        // console.log(current)
     });
     change(arrArrows)
 });
@@ -124,11 +124,11 @@ function pagClick(){
     arrPag.map((el)=>{
         el.addEventListener("click", (e)=>{
 
-            console.log(el.dataset.set);
+            // console.log(el.dataset.set);
             current = Number(el.dataset.set);
             change(arrPag);
             pagActive();
-            console.log(current)
+            // console.log(current)
 
         })
     });
@@ -140,8 +140,7 @@ function pagClick(){
 
 pagClick();
 pagActive();
-console.log(current);
-console.log(arrPag);
+
 
 
 
